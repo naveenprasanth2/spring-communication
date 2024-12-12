@@ -1,4 +1,4 @@
-package com.dailycodebuffer.springcommunication.service;
+package com.dailycodebuffer.springcommunication.service.stratergy;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

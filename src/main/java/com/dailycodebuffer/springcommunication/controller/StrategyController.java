@@ -1,7 +1,7 @@
 package com.dailycodebuffer.springcommunication.controller;
 
-import com.dailycodebuffer.springcommunication.service.EncryptionService;
-import com.dailycodebuffer.springcommunication.service.EncryptionType;
+import com.dailycodebuffer.springcommunication.service.stratergy.EncryptionService;
+import com.dailycodebuffer.springcommunication.service.stratergy.EncryptionType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

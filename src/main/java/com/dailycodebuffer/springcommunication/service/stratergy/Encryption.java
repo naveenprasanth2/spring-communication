@@ -1,4 +1,4 @@
-package com.dailycodebuffer.springcommunication.service;
+package com.dailycodebuffer.springcommunication.service.stratergy;
 
 public interface Encryption {
     EncryptionType getEncryptionType();
