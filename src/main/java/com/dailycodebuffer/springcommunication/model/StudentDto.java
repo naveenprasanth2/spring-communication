@@ -1,6 +1,7 @@
 package com.dailycodebuffer.springcommunication.model;
 
-import com.dailycodebuffer.springcommunication.service.exception.NameValidation;
+import com.dailycodebuffer.springcommunication.service.validation.Invoker;
+import com.dailycodebuffer.springcommunication.service.validation.NameValidation;
 import lombok.*;
 
 @AllArgsConstructor
@@ -10,7 +11,7 @@ import lombok.*;
 @ToString
 public class StudentDto {
     private int id;
-    @NameValidation
+    @NameValidation(groups = {Invoker.class})
     private String name;
     private int age;
 }

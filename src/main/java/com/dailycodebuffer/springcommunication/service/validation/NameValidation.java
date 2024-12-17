@@ -1,4 +1,5 @@
-package com.dailycodebuffer.springcommunication.service.exception;
+package com.dailycodebuffer.springcommunication.service.validation;
+
 import jakarta.validation.Constraint;
 import jakarta.validation.Payload;
 
@@ -9,9 +10,9 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.FIELD)
 @Retention(RetentionPolicy.RUNTIME)
-@Constraint(validatedBy = MyCustomValidator.class)
+@Constraint(validatedBy = NameValidator.class)
 public @interface NameValidation {
-    String message() default "Invalid name";
+    String message() default "Name is required";
     Class<?>[] groups() default {};
     Class<? extends Payload>[] payload() default {};
 }
