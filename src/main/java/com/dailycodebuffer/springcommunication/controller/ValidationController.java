@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 public class ValidationController {
     @PostMapping("/name")
     public ResponseEntity<StudentDto> validateName(@Validated(value = {Invoker.class}) @RequestBody StudentDto student) {
+        System.out.println(student);
         return new ResponseEntity<>(student, HttpStatus.OK);
     }
 }
